@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Home page{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: blue; }
+    .blueblock { color: yellow; }
+  </style>
+{% endblock %}
+{% block content %}
+  <h1>This is your homepage</h1>
+  <h2>Welcome!</h2>
+  <p class="important">
+    Welcome on my awesome homepage.
+  <div class="blueblock">
+    My yellow block
+  </div>
+{% endblock %}
